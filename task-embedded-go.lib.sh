@@ -62,7 +62,7 @@ subcmd_go__embedded__sh__gen() { # Generate a shell script with embedded Go code
   chmod 0755 "$out_sh"
 }
 
-subcmd_go__embedded__cmd__gen() {
+subcmd_go__embedded__cmd__gen() { # Generate a command script with embedded Go code.
   first_call 645592d || return 0
 
   local main_go=

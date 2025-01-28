@@ -6,7 +6,7 @@ set -o nounset -o errexit
 . ./task-go.lib.sh
 . ./task-embedded-go.lib.sh
 
-task_go_hello__gen() { # Generate go-embedded sample scripts.
+task_shims__gen() { # Generate go-embedded bootstrap scripts.
   local out_sh=gorun
   subcmd_go__embedded__sh__gen \
     --url="https://raw.githubusercontent.com/knaka/gorun/$out_sh" \
@@ -22,5 +22,5 @@ task_go_hello__gen() { # Generate go-embedded sample scripts.
 }
 
 task_gen() { # Generate files.
-  task_go_hello__gen
+  task_shims__gen
 }
