@@ -12,7 +12,7 @@ trap cleanup EXIT
 if test "${1+SET}" = SET && test "$1" = "update-me"
 then
   # shellcheck disable=SC2064
-  curl --fail --location --output "$temp_dir"/2e1b35b https://raw.githubusercontent.com/knaka/gorun/gorun
+  curl --fail --location --output "$temp_dir"/2e1b35b https://raw.githubusercontent.com/knaka/gorun/refs/heads/main/gorun
   cat "$temp_dir"/2e1b35b > "$0"
   exit 0
 fi

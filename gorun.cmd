@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 if "%~1" == "update-me" (
-  curl.exe --fail --location --output %TEMP%\cmd-%~nx0 https://raw.githubusercontent.com/knaka/gorun/gorun.cmd
+  curl.exe --fail --location --output %TEMP%\cmd-%~nx0 https://raw.githubusercontent.com/knaka/gorun/refs/heads/main/gorun.cmd
   move /y %TEMP%\cmd-%~nx0 %~f0
   exit /b 0
 )
