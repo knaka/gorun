@@ -80,3 +80,11 @@ This project is licensed under the Apache License, Version 2.0. See the [LICENSE
 * * *
 
 Enjoy faster development with `gorun`!
+
+ToDos
+-----
+
+- [ ] Expire cached `@latest` version binaries after a certain period
+- [ ] Add tests
+- [ ] Add CI/CD
+- [ ] 動作確認 for Windows
